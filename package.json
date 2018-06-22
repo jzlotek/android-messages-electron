@@ -1,0 +1,20 @@
+{
+  "name": "android-messages-electron",
+  "version": "1.0.0",
+  "description": "An Android Messages standalone app webview",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/jzlotek/android-messages-electron",
+  "keywords": [
+    "Electron",
+    "android",
+    "messages"
+  ],
+  "author": "jzlotek",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^2.0.0"
+  }
+}
