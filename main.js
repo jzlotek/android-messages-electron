@@ -5,6 +5,8 @@ const {app, BrowserWindow} = require('electron')
 // be closed automatically when the JavaScript object is garbage collected.
 
 const messagesURL = 'https://messages.android.com'
+
+
 let statusCode
 
 function setStatusCode(sc){
@@ -35,14 +37,13 @@ function createWindow () {
   // Create the browser window.
   mainWindow = new BrowserWindow({width: 800, height: 600})
 
+  mainWindow.setMenu(null)
   // and load the index.html of the app.
   // mainWindow.loadFile('index.html')
 
 
-
-
-
   mainWindow.loadURL(messagesURL)
+  mainWindow.setTitle("Android Messages on Electron")
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()

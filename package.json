@@ -4,7 +4,10 @@
   "description": "An Android Messages standalone app webview",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
   },
   "repository": "https://github.com/jzlotek/android-messages-electron",
   "keywords": [
@@ -15,6 +18,14 @@
   "author": "jzlotek",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^2.0.0"
+    "electron": "^2.0.0",
+    "electron-winstaller": "^2.6.4"
+  },
+  "dependencies": {
+
+  },
+  "build": {
+    "appId": "jzlotek",
+    "productName":"Android Messages"
   }
 }
