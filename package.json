@@ -18,7 +18,7 @@
   "author": "jzlotek",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^2.0.0",
+    "electron": ">=2.0.8",
     "electron-winstaller": "^2.6.4"
   },
   "dependencies": {
